@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="left">
+      <div class="logo">
+        <img src="./images/odin-lined.png" alt="odin-logo" />
+        <p>ODIN</p>
+      </div>
+      <p class="credit">
+        Image by Ryan McGuire on
+        <a
+          href="https://www.needpix.com/photo/download/144414/street-road-horizon-endless-flatland-america-usa-road-trip-traffic"
+          >Needpix.com</a
+        >
+      </p>
+    </div>
+    <div class="right">
+      <div class="top">
+        <blockquote>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </blockquote>
+        <blockquote>You <em>know</em> you want to.</blockquote>
+      </div>
+      <div class="middle">
+        <h2>Let's do this!</h2>
+        <form action="" method="post">
+          <label for="first-name"
+            >FIRST NAME<input
+              type="text"
+              id="first-name"
+              name="first-name" /></label
+          ><label for="last-name"
+            >LAST NAME<input
+              type="text"
+              id="last-name"
+              name="last-name" /></label
+          ><label for="email"
+            >EMAIL<input type="email" id="email" name="user-email" /></label
+          ><label for="phone"
+            >PHONE NUMBER<input
+              type="tel"
+              id="phone"
+              name="user-phone" /></label
+          ><label for="password"
+            >PASSWORD<input type="text" id="password" name="password" /></label
+          ><label for="confirm-password"
+            >CONFIRM PASSWORD<input
+              type="text"
+              id="confirm-password"
+              name="confirm-password"
+          /></label>
+        </form>
+      </div>
+      <div class="bottom">
+        <button type="submit">Create account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
   </body>
 </html>
