@@ -22,45 +22,44 @@
       </p>
     </div>
     <div class="right">
-      <div class="top">
+      <div class="top-right">
         <blockquote>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em> to get started.
+          <em>now</em> to get started. <br> <br> You <em>know</em> you want to.
         </blockquote>
-        <blockquote>You <em>know</em> you want to.</blockquote>
       </div>
-      <div class="middle">
+      <div class="middle-right">
         <h2>Let's do this!</h2>
         <form action="" method="post">
           <label for="first-name"
             >FIRST NAME<input
               type="text"
               id="first-name"
-              name="first-name" /></label
+              name="first-name" minlength="2" maxlength="20" required aria-required="true"/></label
           ><label for="last-name"
             >LAST NAME<input
               type="text"
               id="last-name"
-              name="last-name" /></label
+              name="last-name" maxlength="20"/></label
           ><label for="email"
-            >EMAIL<input type="email" id="email" name="user-email" /></label
+            >EMAIL<input type="email" id="email" name="user-email" required aria-required="true"/></label
           ><label for="phone"
             >PHONE NUMBER<input
               type="tel"
               id="phone"
-              name="user-phone" /></label
+              name="user-phone" minlength="8" maxlength="12"/></label
           ><label for="password"
-            >PASSWORD<input type="text" id="password" name="password" /></label
+            >PASSWORD<input type="password" id="password" name="password" required minlength="8" maxlength="16" aria-required="true"/></label
           ><label for="confirm-password"
             >CONFIRM PASSWORD<input
-              type="text"
+              type="password"
               id="confirm-password"
-              name="confirm-password"
+              name="confirm-password" required minlength="8" maxlength="16" aria-required="true"
           /></label>
         </form>
       </div>
-      <div class="bottom">
+      <div class="bottom-right">
         <button type="submit">Create account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
