@@ -22,11 +22,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-size: 20px;
 } /* full page image bg, taken from css-tricks.com */
 
-/* Body Styles */
 body {
   display: flex;
+  flex: auto;
   font-family: Helvetica, Arial, system-ui;
   height: 100vh;
   line-height: 1.5;
@@ -40,11 +41,10 @@ textarea {
   font-size: 100%;
 }
 
-/* Container Styling */
 .left {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    max-width: 25%;
 }
 
 .logo {
@@ -55,9 +55,9 @@ textarea {
     background-color: rgba(0, 0, 0, 0.2) ;
     font-family: "Norse";
     color: white;
-    font-size: 3rem;
+    font-size: clamp(0.5rem, 3rem, 3rem);
     padding: 12px;
-    margin-top: 30%;
+    margin-top: 13%;
 }
 
 .logo img {
@@ -76,28 +76,32 @@ textarea {
 .right {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    max-width: 75%;
 
 }
 
 .top-right {
     height: 35%;
-    background-color: gainsboro;
+    background-color: #f0f0f0;
 }
 
 blockquote {
     max-width: 90%;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 900;
     padding: 7% 3%;
 }
 
 .middle-right {
+    position: relative;
     background-color: white;
     width: 100%;
     height: 30%;
-    padding: 20px;
-    /* box-shadow: 0 0 0 1px black; */
+    padding: 1% 4%;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+h3 {
+    margin-bottom: 1%;
 }
 
 form {
@@ -105,19 +109,22 @@ form {
     flex: 1;
     flex-wrap: wrap;
     width: 70%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 label {
     display: flex;
     flex-direction: column;
-    flex: 0 1 calc(50% - 10px);
+    flex: 0 1 20vw;
+    color: #333;
+    font-size: clamp(0.6rem, 0.8rem, 3rem);
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 input {
-    width: 70%;
+    width: 90%;
     height: 3vh;
     border: 1px solid #E5E7EB;
     border-radius: 2px;
@@ -136,5 +143,25 @@ input:focus {
 .bottom-right {
     height: 35%;
     padding: 30px;
-    background-color: gainsboro;
+    background-color: #f0f0f0;
+    padding: 2% 4%;
+    font-weight: 600;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 1% 4%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+.bottom-right p {
+    font-size: clamp(0.3rem, 0.7rem, 0.7rem);
+}
+
+.bottom-right a {
+    color: #596D48;
+    text-decoration: none;
 }
