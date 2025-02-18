@@ -1,17 +1,37 @@
 /* Reset */
 @font-face {
-    font-family: 'Norse';
-    src: url('Norse-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Norse";
+  src: url("./fonts/Norse-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  background: url(./images/street-238458_1280-ryanmcguire.jpg) no-repeat center 
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} /* full page image bg, taken from css-tricks.com */
+
+/* Body Styles */
+body {
+  display: flex;
+  font-family: Helvetica, Arial, system-ui;
+  height: 100vh;
+  line-height: 1.5;
+}
+
 button,
 input,
 select,
@@ -20,28 +40,45 @@ textarea {
   font-size: 100%;
 }
 
-/* Body Styles */
-body {
-    font-family: Helvetica, Arial, system-ui;
+/* Container Styling */
+.left {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    line-height: 1.5;
+    width: 25vw;
 }
 
-/* Container Styling */
-.container {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2) ;
+    font-family: "Norse";
+    color: white;
+    font-size: 3rem;
+    padding: 12px;
+    margin-top: 30%;
+}
+
+.logo img {
+    height: auto;
+    width: 20%;
+}
+
+.credit, .credit a{
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 /* Child Elements */
 .child-1 {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
